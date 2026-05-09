@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daferness Reservations</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1,h2,h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+
+<body class="bg-[#0b0b0b] text-white font-[Inter]">
+
+    <!-- HEADER -->
+    <header class="max-w-7xl mx-auto px-6 flex justify-between items-center py-6">
+        <div>
+            <h2 class="text-2xl text-[#e0b27a] font-semibold">Daferness</h2>
+        </div>
+
+        <nav class="hidden md:flex gap-8 text-gray-300">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a class="text-[#e0b27a] border-b border-[#e0b27a] pb-1">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-5 py-2 rounded-lg text-black font-medium">Reserve a Table</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
+        <!-- LEFT -->
+        <div>
+        <p class="text-[#e0b27a]">RESERVATIONS</p>
+        <h1 class="text-5xl md:text-6xl mb-6">
+            Reserve Your Table
+        </h1>
+        <p class="text-gray-400 mb-6">
+            Great dining begins with a reservation.
+            We look forward to welcoming you to Daferness.
+        </p>
+        <!-- FEATURES -->
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+            <div>📅</div>
+            <div>
+                <h3 class="text-[#e0b27a]">Easy Reservations</h3>
+                <p class="text-gray-400 text-sm">Book your table in just a few clicks.</p>
+            </div>
+            </div>
+            <div class="flex gap-4">
+            <div>🕒</div>
+            <div>
+                <h3 class="text-[#e0b27a]">Instant Confirmation</h3>
+                <p class="text-gray-400 text-sm">Receive immediate confirmation for your booking.</p>
+            </div>
+            </div>
+            <div class="flex gap-4">
+            <div>👥</div>
+            <div>
+                <h3 class="text-[#e0b27a]">Exceptional Experience</h3>
+                <p class="text-gray-400 text-sm">Sit back, relax, and enjoy an unforgettable dining experience.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- RIGHT -->
+        <div>
+        <img class="rounded-xl shadow-2xl" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1400&auto=format&fit=crop" alt="Reservation Dining">
+        </div>
+    </section>
+
+    <!-- RESERVATION FORM SECTION -->
+    <section class="max-w-7xl mx-auto grid grid-cols-2 gap-10 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+
+        <!-- LEFT FORM -->
+        <div>
+            <h2 class="text-4xl text-[#e0b27a] mb-10 text-center">
+                Make a Reservation
+            </h2>
+            <form class="space-y-6">
+                <!-- TOP ROW -->
+                <div class="grid grid-cols-3 gap-5">
+
+                <div class="flex flex-col gap-1">
+                    <label>Date</label>
+                    <select class="p-1 text-[#e0b27a] rounded-md">
+                    <option>Select Date</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <label>Time</label>
+                    <select class="p-1 text-[#e0b27a] rounded-md">
+                    <option>Select Time</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <label>Guests</label>
+                    <select class="p-1 text-[#e0b27a] rounded-md">
+                    <option>Select Guests</option>
+                    </select>
+                </div>
+
+                </div>
+
+                <!-- SECOND ROW -->
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="flex flex-col gap-1">
+                        <label>Your Name</label>
+                        <input class="p-1 text-[#e0b27a] rounded-md" type="text" placeholder="Enter your name">
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <label>Phone Number</label>
+                        <input class="p-1 text-[#e0b27a] rounded-md" type="text" placeholder="Enter your phone number">
+                    </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="flex flex-col gap-1">
+                <label>Email Address</label>
+                <input class="p-1 text-[#e0b27a] rounded-md" type="email" placeholder="Enter your email address">
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="flex flex-col gap-1">
+                <label>Special Requests (Optional)</label>
+
+                <textarea class="p-5 rounded-lg" placeholder="Any special requests or preferences?"></textarea>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="text-center">
+                    <button class="bg-[#e0b27a] px-16 py-2 rounded-lg text-black mb-4">
+                    Find a Table
+                    </button>
+                
+                    <p class="text-gray-300 text-sm">
+                    Your information is secure and will only be used for your reservation.
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- RIGHT INFO -->
+        <div class="border border-[#e0b27a]/10 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+
+            <h2 class="text-2xl text-[#e0b27a] mb-5">
+                Reservation Information
+            </h2>
+
+            <!-- ITEM -->
+            <div class="flex gap-4 p-4 border-b border-[#e0b27a]/30">
+
+                <div>🕒</div>
+
+                <div class="text-gray-400 text-sm space-y-2">
+                    <h3 class="text-xl text-white">Dining Hours</h3>
+
+                    <!-- HOURS -->
+                    <div class="space-y-2">
+                        <div class="flex gap-4 justify-between">
+                            <p>Monday – Thursday</p>
+                            <span class="text-gray-400">5:00 PM – 10:30 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Friday – Saturday</p>
+                            <span class="text-gray-400">5:00 PM – 11:30 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Sunday</p>
+                            <span class="text-gray-400">4:00 PM – 9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="flex gap-4 p-4 border-b border-[#e0b27a]/30">
+
+                <div>📅</div>
+
+                <div class="text-gray-400 text-sm">
+                <h3 class="text-xl text-white">Advance Booking</h3>
+
+                <p>We recommend booking in advance to secure your preferred time.
+                </p>
+                </div>
+            </div>
+            <!-- ITEM -->
+            <div class="flex gap-4 p-4 border-b border-[#e0b27a]/30">
+                <div>👥</div>
+                <div class="text-gray-400 text-sm">
+                <h3 class="text-xl text-white">Group Reservations</h3>
+                <p>For parties of 8 or more, please call us directly.</p>
+                </div>
+            </div>
+            <!-- ITEM -->
+            <div class="flex gap-4 p-4">
+                <div>📞</div>
+                <div class="text-gray-400 text-sm">
+                <h3 class="text-xl text-white">Need Help?</h3>
+                <p>Call us at</p>
+                <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIVATE DINING -->
+    <section class="max-w-7xl mx-auto grid grid-cols-3 gap-10 items-center mt-10 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+
+        <!-- IMAGE -->
+        <div>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Private Dining">
+        </div>
+
+        <!-- CONTENT -->
+        <div>
+
+        <h2 class="text-xl text-[#e0b27a]">
+            Private Dining & Special Occasions
+        </h2>
+
+        <p class="text-gray-400 text-sm mb-4">
+            Celebrate life’s special moments with us.
+        </p>
+
+        <button class="px-6 py-2 bg-[#e0b27a] rounded-lg text-black shadow-2xl">
+            Inquire Now
+        </button>
+
+        </div>
+
+        <!-- FEATURES -->
+        <div>
+
+        <div class="flex gap-4 m-4">
+            <span>🍽️</span>
+            <p>Private Dining Rooms</p>
+        </div>
+
+        <div class="flex gap-4 m-4">
+            <span>👨‍🍳</span>
+            <p>Custom Menus</p>
+        </div>
+
+        <div class="flex gap-4 m-4">
+            <span>🎂</span>
+            <p>Birthdays & Anniversaries</p>
+        </div>
+
+        <div class="flex gap-4 m-4">
+            <span>💼</span>
+            <p>Corporate Events</p>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- RULES -->
+    <section class="max-w-7xl mx-auto mt-10 grid grid-cols-4 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+
+        <div class="flex gap-2 items-center">
+
+        <div>📅</div>
+
+        <div>
+            <h3 class="text-xl text-[#e0b27a]">Plan Ahead</h3>
+            <p class="text-gray-400 text-sm">Reserve early for weekends and occasions.</p>
+        </div>
+
+        </div>
+
+        <div class="flex gap-2 items-center">
+
+        <div>🔔</div>
+
+        <div>
+            <h3 class="text-xl text-[#e0b27a]">Arrive On Time</h3>
+            <p class="text-gray-400 text-sm">Please arrive before reservation.</p>
+        </div>
+
+        </div>
+
+        <div class="flex gap-2 items-center">
+
+        <div>❤️</div>
+
+        <div>
+            <h3 class="text-xl text-[#e0b27a]">We Hold Your Table</h3>
+            <p class="text-gray-400 text-sm">We hold tables for 15 minutes.</p>
+        </div>
+
+        </div>
+
+        <div class="flex gap-2 items-center">
+
+        <div>✖️</div>
+
+        <div>
+            <h3 class="text-xl text-[#e0b27a]">Need to Cancel?</h3>
+            <p class="text-gray-400 text-sm">Kindly inform us at least 2 hours prior.</p>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-4 gap-10 border-b border-[#e0b27a]/20 p-6">
+
+        <!-- BRAND -->
+        <div class="space-y-4">
+            <h3 class="text-3xl text-[#e0b27a]">Daferness</h3>
+            <p class="text-gray-400 text-sm">Elevating dining to an art form.</p>
+            <div class="text-black flex gap-4 items-center">
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- LINKS -->
+        <div class="text-gray-400 text-sm space-y-2">
+            <h4 class="text-xl text-white">Quick Links</h4>
+
+            <div class="flex flex-col gap-2">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="reservation.html">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="text-gray-400 text-sm space-y-2">
+            <h4 class="text-xl text-white">Contact</h4>
+            <p>+1 (123) 456-7890</p>
+            <p>hello@daferness.com</p>
+            <p>123 Gourmet Street, Foodie City, FC 12345</p>
+        </div>
+
+        <div class="text-gray-400 text-sm space-y-2">
+
+        <h4 class="text-xl text-white">Hours</h4>
+
+        <!-- HOURS -->
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <p>Monday – Thursday</p>
+                    <span class="text-gray-400">5:00 PM – 10:30 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <p>Friday – Saturday</p>
+                    <span class="text-gray-400">5:00 PM – 11:30 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <p>Sunday</p>
+                    <span class="text-gray-400">4:00 PM – 9:30 PM</span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+     <!-- COPYRIGHT -->
+    <div class="text-center text-sm py-3">
+      <p>© 2025 Daferness. All rights reserved.</p>
+    </div>
+</body>
+</html>

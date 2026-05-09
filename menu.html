@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daferness Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1,h2,h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+
+<body class="bg-[#0b0b0b] text-white">
+
+    <!-- HEADER -->
+    <header class="max-w-7xl mx-auto px-6 flex justify-between items-center py-6">
+        <div>
+            <h2 class="text-2xl text-[#e0b27a] font-semibold">Daferness</h2>
+        </div>
+
+        <nav class="hidden md:flex gap-8 text-gray-300">
+            <a href="index.html">Home</a>
+            <a class="text-[#e0b27a] border-b border-[#e0b27a] pb-1">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-5 py-2 rounded-lg text-black font-medium shadow">Reserve a Table</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center ">
+        <div>
+            <h1 class="text-5xl md:text-6xl text-[#e0b27a] mb-6">Our Menu</h1>
+            <p class="text-gray-400">A curated selection of dishes crafted with passion and the finest ingredients.</p>
+        </div>
+
+        <div>
+            <img class="rounded-xl shadow-2xl" src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Food">
+        </div>
+    </section>
+
+    <!-- STARTERS -->
+    <section class="max-w-7xl mx-auto px-6 space-y-6">
+
+        <!--Starters-->
+        <div class="border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+            <h2 class="text-[#e0b27a] text-xl mb-6">STARTERS</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- LEFT -->
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1604908812023-58d3d79b4c83" class="w-24 h-24 rounded-lg object-cover">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Bruschetta</h3><span class="text-[#e0b27a]">$10</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Toasted bread with tomatoes, garlic & basil.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74" class="w-24 h-24 rounded-lg object-cover">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Caesar Salad</h3><span class="text-[#e0b27a]">$12</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Crisp lettuce with parmesan and dressing.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4" class="w-24 h-24 rounded-lg object-cover">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Stuffed Mushrooms</h3><span class="text-[#e0b27a]">$11</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Cheese-filled baked mushrooms.</p>
+                    </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="space-y-6">
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1625944525533-473f1d7d9c0f" class="w-24 h-24 rounded-lg object-cover">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Shrimp Cocktail</h3><span class="text-[#e0b27a]">$14</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Chilled shrimp with cocktail sauce.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1627308595171-d1b5d67129c4" class="w-24 h-24 rounded-lg object-cover">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Caprese Skewers</h3><span class="text-[#e0b27a]">$12</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Mozzarella, tomato & basil.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1604908177522-3d1c4c8590b7" class="w-24 h-24 rounded-lg object-cover">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>French Onion Soup</h3><span class="text-[#e0b27a]">$9</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Rich onion soup topped with cheese.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN COURSES -->
+        <div class="border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+            <h2 class="text-[#e0b27a] text-xl mb-6">MAIN COURSES</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462" class="w-24 h-24 rounded-lg">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Angus Steak</h3><span class="text-[#e0b27a]">$35</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Juicy steak with rosemary butter.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" class="w-24 h-24 rounded-lg">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Garlic Butter Shrimp</h3><span class="text-[#e0b27a]">$28</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Shrimp sautéed in garlic butter.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" class="w-24 h-24 rounded-lg">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Truffle Risotto</h3><span class="text-[#e0b27a]">$32</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Creamy risotto with truffle.</p>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="space-y-6">
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288" class="w-24 h-24 rounded-lg">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Grilled Salmon</h3><span class="text-[#e0b27a]">$30</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Salmon with lemon butter.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4" class="w-24 h-24 rounded-lg">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Chicken Piccata</h3><span class="text-[#e0b27a]">$26</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Chicken with lemon caper sauce.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                    <img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4" class="w-24 h-24 rounded-lg">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                        <h3>Lamb Chops</h3><span class="text-[#e0b27a]">$38</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Tender lamb with herbs.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- SIDES -->
+            <div class="border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6"> 
+                <h2 class="text-[#e0b27a] mb-4">SIDES</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <ul class="space-y-4">
+                        <li class="flex justify-between"><span>Roasted Vegetables</span><span>$7</span></li>
+                        <li class="flex justify-between"><span>Creamy Mashed Potatoes</span><span>$6</span></li>
+                        <li class="flex justify-between"><span>Truffle Fries</span><span>$8</span></li>
+                        <li class="flex justify-between"><span>Garlic Bread</span><span>$5</span></li>
+                        <li class="flex justify-between"><span>Steamed Asparagus</span><span>$7</span></li>
+                    </ul>
+                    <img src="https://images.unsplash.com/photo-1604908177522-3d1c4c8590b7" class="rounded-xl object-cover h-full">
+                </div>
+            </div>
+            <!-- DESSERTS -->
+            <div class="border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] p-6 rounded-xl">
+                <h2 class="text-[#e0b27a] mb-4">DESSERTS</h2>
+                <div class="space-y-6">
+
+                    <div class="flex gap-4">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476f" class="w-20 h-20 rounded-lg">
+                        <div class="flex-1">
+                        <div class="flex justify-between">
+                            <h3>Chocolate Lava Cake</h3><span class="text-[#e0b27a]">$10</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Warm cake with molten center.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" class="w-20 h-20 rounded-lg">
+                        <div class="flex-1">
+                        <div class="flex justify-between">
+                            <h3>Tiramisu</h3><span class="text-[#e0b27a]">$9</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Classic Italian dessert.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa" class="w-20 h-20 rounded-lg">
+                        <div class="flex-1">
+                        <div class="flex justify-between">
+                            <h3>Crème Brûlée</h3><span class="text-[#e0b27a]">$8</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Custard with caramelized sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BEVERAGES -->
+        <div class="border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+            <h2 class="text-[#e0b27a] mb-4">BEVERAGES</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                    <div>
+                        <h3>Red Wine</h3>
+                        <p class="text-gray-400 text-sm">Selection of fine wines.</p>
+                    </div>
+                    <span>$10</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                    <div>
+                        <h3>White Wine</h3>
+                        <p class="text-gray-400 text-sm">Premium white wines.</p>
+                    </div>
+                    <span>$10</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                    <div>
+                        <h3>Fresh Juices</h3>
+                        <p class="text-gray-400 text-sm">Orange, Apple, Cranberry.</p>
+                    </div>
+                    <span>$6</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                    <div>
+                        <h3>Soft Drinks</h3>
+                        <p class="text-gray-400 text-sm">Coke, Sprite, Ginger Ale.</p>
+                    </div>
+                    <span>$4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h2 class="text-2xl">Ready to indulge?</h2>
+                <p class="text-gray-400 text-sm">Reserve your table today and enjoy an unforgettable dining experience</p>
+            </div>
+            <button class="mt-4 md:mt-0 bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black font-medium">Reserve Your Table</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-4 gap-10 border-b border-[#e0b27a]/20 p-6">
+
+        <!-- BRAND -->
+        <div class="space-y-4">
+            <h3 class="text-3xl text-[#e0b27a]">Daferness</h3>
+            <p class="text-gray-400 text-sm">Elevating dining to an art form.</p>
+            <div class="text-black flex gap-4 items-center">
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- LINKS -->
+        <div class="text-gray-400 text-sm space-y-2">
+            <h4 class="text-xl text-white">Quick Links</h4>
+
+            <div class="flex flex-col gap-2">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="reservation.html">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="text-gray-400 text-sm space-y-2">
+            <h4 class="text-xl text-white">Contact</h4>
+            <p>+1 (123) 456-7890</p>
+            <p>hello@daferness.com</p>
+            <p>123 Gourmet Street, Foodie City, FC 12345</p>
+        </div>
+
+        <div class="text-gray-400 text-sm space-y-2">
+
+        <h4 class="text-xl text-white">Hours</h4>
+
+        <!-- HOURS -->
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <p>Monday – Thursday</p>
+                    <span class="text-gray-400">5:00 PM – 10:30 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <p>Friday – Saturday</p>
+                    <span class="text-gray-400">5:00 PM – 11:30 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <p>Sunday</p>
+                    <span class="text-gray-400">4:00 PM – 9:30 PM</span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+     <!-- COPYRIGHT -->
+    <div class="text-center text-sm py-3">
+      <p>© 2025 Daferness. All rights reserved.</p>
+    </div>
+</body>
+</html>

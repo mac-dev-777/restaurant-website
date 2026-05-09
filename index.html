@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daferness</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1,h2,h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+
+<body class="bg-[#0b0b0b] text-white font-[Inter]">
+
+    <header class="max-w-7xl mx-auto px-6 flex justify-between items-center py-6">
+        <h2 class="text-2xl text-[#e0b27a] font-semibold">Daferness</h2>
+
+        <nav class="hidden md:flex gap-8 text-gray-300">
+            <a class="text-[#e0b27a] border-b border-[#e0b27a] pb-1">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-5 py-2 rounded-lg text-black font-medium">Reserve a Table</button>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-10 gap-10 grid md:grid-cols-2 items-center">
+        <div>
+            <h1 class="text-4xl md:text-6xl leading-tight font-bold mb-6">Savor the Finest <br> Dining Experience</h1>
+
+            <p class="text-gray-400 mb-8">
+            Where exquisite flavors, elegant ambiance,
+            and unforgettable moments come together.
+            </p>
+
+            <div class="flex gap-4">
+            <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black font-medium shadow-md">View Menu</button>
+            <button class="border border-gray-600 px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">Reserve a Table</button>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-6">⭐ Loved by 200+ satisfied diners this week</p>
+        </div>
+
+        <div>
+            <img class="rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Dining">
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto border border-gray-800 rounded-xl py-6 px-6 grid grid-cols-2 md:grid-cols-4 text-center backdrop-blur-lg bg-white/5">
+        <div>
+            <h3 class="text-2xl font-semibold">5+</h3>
+            <p class="text-gray-400 text-sm">Years of Excellence</p>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-semibold">200+</h3>
+            <p class="text-gray-400 text-sm">5-Star Reviews</p>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-semibold">1</h3>
+            <p class="text-gray-400 text-sm">Fine Dining Experience</p>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-semibold">50+</h3>
+            <p class="text-gray-400 text-sm">Signature Dishes</p>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-10 text-center">
+        <h2 class="text-4xl font-semibold mb-2">Our Signature Dishes</h2>
+        <p class="text-gray-400 mb-10">Crafted with passion. Served with perfection.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white/5 backdrop-blur-lg border border-gray-800 rounded-xl overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1558030006-450675393462" class="h-56 w-full object-cover" alt="Angus Steak">
+                <div class="p-5 text-left">
+                    <div class="flex justify-between">
+                    <h3 class="text-lg">Angus Steak </h3>
+                    <span class="text-[#e0b27a]">$35</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">Juicy Angus steak with rosemary butter...</p> 
+                </div>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-lg border border-gray-800 rounded-xl overflow-hidden shadow-lg">
+                <img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Garlic Butter Shrimp">
+                <div class="p-5 text-left">
+                    <div class="flex justify-between">
+                    <h3 class="text-lg">Garlic Butter Shrimp</h3>
+                    <span class="text-[#e0b27a]">$28</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">Succulent shrimp sautéed in garlic butter...</p>
+                </div>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-lg border border-gray-800 rounded-xl overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" class="h-56 w-full object-cover" alt="Truffle Risotto">
+                <div class="p-5 text-left">
+                    <div class="flex justify-between">
+                    <h3 class="text-lg">Truffle Risotto</h3>
+                    <span class="text-[#e0b27a]">$32</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">Creamy risotto with truffle oil...</p>
+                </div>
+            </div>
+        </div>
+        <button class="mt-10 bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black font-medium shadow-md">View Full Menu</button>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 gap-10 items-center">
+        <div>
+            <h2 class="text-4xl mb-6">Why Choose Daferness?</h2>
+
+            <div class="space-y-6 text-gray-300">
+            <p>🍽️ Exquisite Cuisine crafted by expert chefs</p>
+            <p>✨ Elegant ambiance perfect for any occasion</p>
+            <p>🏆 Award-winning dining experience</p>
+            <p>🤝 Exceptional service & hospitality</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" class="rounded-xl shadow-2xl" alt="Restaurant">
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-10">
+        <h2 class="text-center text-4xl mb-10">What Our Guests Say</h2>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white/5 border border-gray-800 rounded-xl p-6">
+            <p class="text-gray-300">"An amazing experience! The steak was cooked to perfection..."</p>
+            <h4 class="mt-4 font-semibold">James R.</h4>
+            </div>
+
+            <div class="bg-white/5 border border-gray-800 rounded-xl p-6">
+            <p class="text-gray-300">"The best dining experience in town..."</p>
+            <h4 class="mt-4 font-semibold">Sarah L.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center py-10 px-6 border-t border-gray-800">
+        <h2 class="text-3xl mb-4">Ready for an Unforgettable Experience?</h2>
+        <p class="text-gray-400 mb-6">Reserve your table today</p>
+
+        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-8 py-3 rounded-lg text-black font-medium shadow-lg">Reserve Your Table</button>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-4 gap-10 border-b border-[#e0b27a]/20 p-6">
+
+        <!-- BRAND -->
+        <div class="space-y-4">
+            <h3 class="text-3xl text-[#e0b27a]">Daferness</h3>
+            <p class="text-gray-400 text-sm">Elevating dining to an art form.</p>
+            <div class="text-black flex gap-4 items-center">
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- LINKS -->
+        <div class="text-gray-400 text-sm space-y-2">
+            <h4 class="text-xl text-white">Quick Links</h4>
+
+            <div class="flex flex-col gap-2">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="reservation.html">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="text-gray-400 text-sm space-y-2">
+            <h4 class="text-xl text-white">Contact</h4>
+            <p>+1 (123) 456-7890</p>
+            <p>hello@daferness.com</p>
+            <p>123 Gourmet Street, Foodie City, FC 12345</p>
+        </div>
+
+        <div class="text-gray-400 text-sm space-y-2">
+
+        <h4 class="text-xl text-white">Hours</h4>
+
+        <!-- HOURS -->
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <p>Monday – Thursday</p>
+                    <span class="text-gray-400">5:00 PM – 10:30 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <p>Friday – Saturday</p>
+                    <span class="text-gray-400">5:00 PM – 11:30 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <p>Sunday</p>
+                    <span class="text-gray-400">4:00 PM – 9:30 PM</span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+     <!-- COPYRIGHT -->
+    <div class="text-center text-sm py-3">
+      <p>© 2025 Daferness. All rights reserved.</p>
+    </div>
+</body>
+</html>
