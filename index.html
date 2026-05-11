@@ -22,7 +22,7 @@
     <header class="max-w-7xl mx-auto px-6 flex justify-between items-center py-6">
         <h2 class="text-2xl text-[#e0b27a] font-semibold">Daferness</h2>
 
-        <nav class="hidden md:flex gap-8 text-gray-300">
+        <nav class="hidden md:flex gap-6 text-gray-300">
             <a class="text-[#e0b27a] border-b border-[#e0b27a] pb-1">Home</a>
             <a href="menu.html">Menu</a>
             <a href="about.html">About Us</a>
@@ -30,7 +30,22 @@
             <a href="contact.html">Contact</a>
         </nav>
 
-        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-5 py-2 rounded-lg text-black font-medium">Reserve a Table</button>
+        <a href="reservation.html">
+
+            <button
+            class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-xl text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300"
+            >
+
+            <span class="relative z-10 flex items-center gap-2">
+            <i class="fa-solid fa-calendar-check"></i>
+            Reserve a Table
+            </span>
+
+            <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
+            </button>
+
+        </a>
     </header>
 
     <section class="max-w-7xl mx-auto px-6 py-10 gap-10 grid md:grid-cols-2 items-center">
@@ -43,8 +58,34 @@
             </p>
 
             <div class="flex gap-4">
-            <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black font-medium shadow-md">View Menu</button>
-            <button class="border border-gray-600 px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">Reserve a Table</button>
+                <a href="menu.html">
+
+                    <button
+                    class="group bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-7 py-3 rounded-xl text-black font-semibold shadow-lg hover:scale-105 hover:shadow-[#e0b27a]/40 transition-all duration-300"
+                    >
+
+                    <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i>
+                    View Menu
+                    </span>
+
+                    </button>
+
+                </a>
+                <a href="reservation.html">
+
+                    <button
+                    class="group border border-[#e0b27a] px-7 py-3 rounded-xl text-[#e0b27a] font-medium hover:bg-[#e0b27a] hover:text-black transition-all duration-300 hover:scale-105"
+                    >
+
+                    <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-utensils"></i>
+                    Reserve a Table
+                    </span>
+
+                    </button>
+
+                </a>
             </div>
 
             <p class="text-sm text-gray-500 mt-6">⭐ Loved by 200+ satisfied diners this week</p>
@@ -55,7 +96,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto border border-gray-800 rounded-xl py-6 px-6 grid grid-cols-2 md:grid-cols-4 text-center backdrop-blur-lg bg-white/5">
+    <section class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center backdrop-blur-lg bg-white/5 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
         <div>
             <h3 class="text-2xl font-semibold">5+</h3>
             <p class="text-gray-400 text-sm">Years of Excellence</p>
@@ -81,7 +122,7 @@
         <h2 class="text-4xl font-semibold mb-2">Our Signature Dishes</h2>
         <p class="text-gray-400 mb-10">Crafted with passion. Served with perfection.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <div class="bg-white/5 backdrop-blur-lg border border-gray-800 rounded-xl overflow-hidden shadow-lg">
                 <img src="https://images.unsplash.com/photo-1558030006-450675393462" class="h-56 w-full object-cover" alt="Angus Steak">
@@ -116,10 +157,23 @@
                 </div>
             </div>
         </div>
-        <button class="mt-10 bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black font-medium shadow-md">View Full Menu</button>
+        <a href="menu.html">
+
+            <button
+            class="group mt-10 bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-8 py-3 rounded-xl text-black font-semibold shadow-lg hover:scale-105 hover:shadow-[#e0b27a]/40 transition-all duration-300"
+            >
+
+            <span class="flex items-center gap-2">
+            <i class="fa-solid fa-list"></i>
+            View Full Menu
+            </span>
+
+            </button>
+
+        </a>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 gap-10 items-center">
+    <section class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
         <div>
             <h2 class="text-4xl mb-6">Why Choose Daferness?</h2>
 
@@ -140,37 +194,81 @@
         <h2 class="text-center text-4xl mb-10">What Our Guests Say</h2>
 
         <div class="grid grid-cols-2 gap-6">
-            <div class="bg-white/5 border border-gray-800 rounded-xl p-6">
+            <div class="bg-white/5 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
             <p class="text-gray-300">"An amazing experience! The steak was cooked to perfection..."</p>
             <h4 class="mt-4 font-semibold">James R.</h4>
             </div>
 
-            <div class="bg-white/5 border border-gray-800 rounded-xl p-6">
+            <div class="bg-white/5 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
             <p class="text-gray-300">"The best dining experience in town..."</p>
             <h4 class="mt-4 font-semibold">Sarah L.</h4>
             </div>
         </div>
     </section>
 
-    <section class="text-center py-10 px-6 border-t border-gray-800">
+    <section class="text-center py-10 px-6 border-t border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
         <h2 class="text-3xl mb-4">Ready for an Unforgettable Experience?</h2>
         <p class="text-gray-400 mb-6">Reserve your table today</p>
 
-        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-8 py-3 rounded-lg text-black font-medium shadow-lg">Reserve Your Table</button>
+        <a href="reservation.html">
+
+            <button
+            class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] via-[#f0c48a] to-[#c8965a] px-10 py-4 rounded-2xl text-black font-bold tracking-wide shadow-2xl hover:scale-105 hover:shadow-[#e0b27a]/50 transition-all duration-300"
+            >
+
+            <span class="relative z-10 flex items-center gap-3">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            Reserve Your Table
+            </span>
+
+            <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
+            </button>
+
+        </a>
     </section>
     
     <!-- FOOTER -->
-    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-4 gap-10 border-b border-[#e0b27a]/20 p-6">
+    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
 
         <!-- BRAND -->
         <div class="space-y-4">
             <h3 class="text-3xl text-[#e0b27a]">Daferness</h3>
             <p class="text-gray-400 text-sm">Elevating dining to an art form.</p>
-            <div class="text-black flex gap-4 items-center">
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="flex gap-4 items-center">
+
+                <!-- TWITTER -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-x-twitter text-lg"></i>
+                </a>
+
+                <!-- FACEBOOK -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+
+                <!-- YOUTUBE -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-youtube text-lg"></i>
+                </a>
+
             </div>
         </div>
         <!-- LINKS -->
@@ -219,7 +317,7 @@
 
     </footer>
      <!-- COPYRIGHT -->
-    <div class="text-center text-sm py-3">
+    <div class="text-center text-sm py-3 border-t border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)]">
       <p>© 2025 Daferness. All rights reserved.</p>
     </div>
 </body>

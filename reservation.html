@@ -12,6 +12,12 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1,h2,h3 { font-family: 'Playfair Display', serif; }
+
+        input[type="date"]::-webkit-calendar-picker-indicator,
+        input[type="time"]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+        cursor: pointer;
+}
     </style>
 </head>
 
@@ -23,7 +29,7 @@
             <h2 class="text-2xl text-[#e0b27a] font-semibold">Daferness</h2>
         </div>
 
-        <nav class="hidden md:flex gap-8 text-gray-300">
+        <nav class="hidden md:flex gap-6 text-gray-300">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="about.html">About Us</a>
@@ -31,7 +37,22 @@
             <a href="contact.html">Contact</a>
         </nav>
 
-        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-5 py-2 rounded-lg text-black font-medium">Reserve a Table</button>
+        <a href="reservation.html">
+
+            <button
+            class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-xl text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300"
+            >
+
+            <span class="relative z-10 flex items-center gap-2">
+            <i class="fa-solid fa-calendar-check"></i>
+            Reserve a Table
+            </span>
+
+            <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
+            </button>
+
+        </a>
     </header>
 
     <!-- HERO -->
@@ -87,26 +108,28 @@
             </h2>
             <form class="space-y-6">
                 <!-- TOP ROW -->
-                <div class="grid grid-cols-3 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
                 <div class="flex flex-col gap-1">
                     <label>Date</label>
-                    <select class="p-1 text-[#e0b27a] rounded-md">
-                    <option>Select Date</option>
-                    </select>
+                    <input type="date" min="2026-05-09" name="date" required class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]">
                 </div>
 
                 <div class="flex flex-col gap-1">
                     <label>Time</label>
-                    <select class="p-1 text-[#e0b27a] rounded-md">
-                    <option>Select Time</option>
-                    </select>
+                    <input type="time" name="time" step="1800" required class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]">
                 </div>
 
                 <div class="flex flex-col gap-1">
                     <label>Guests</label>
-                    <select class="p-1 text-[#e0b27a] rounded-md">
-                    <option>Select Guests</option>
+                    <select name="guests" required class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]">
+                        <option value="">Guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6+ Guests</option>
                     </select>
                 </div>
 
@@ -116,32 +139,64 @@
                 <div class="grid grid-cols-2 gap-5">
                     <div class="flex flex-col gap-1">
                         <label>Your Name</label>
-                        <input class="p-1 text-[#e0b27a] rounded-md" type="text" placeholder="Enter your name">
+                        <input class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]" type="text" placeholder="Enter your name">
                     </div>
 
                     <div class="flex flex-col gap-1">
                         <label>Phone Number</label>
-                        <input class="p-1 text-[#e0b27a] rounded-md" type="text" placeholder="Enter your phone number">
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                            maxlength="10"
+                            pattern="[0-9]{10}"
+                            inputmode="numeric"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+                            title="Please enter a valid 10-digit phone number"
+                            class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a] w-full"
+                            >
                     </div>
                 </div>
 
                 <!-- EMAIL -->
                 <div class="flex flex-col gap-1">
                 <label>Email Address</label>
-                <input class="p-1 text-[#e0b27a] rounded-md" type="email" placeholder="Enter your email address">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                    autocomplete="email"
+                    spellcheck="false"
+                    pattern="[a-z0-9._%+-]+@gmail\.com$"
+                    title="Enter a valid email address"
+                    oninput="this.value=this.value.toLowerCase().replace(/\s/g,'')"
+                    class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a] w-full"
+                    >
                 </div>
 
                 <!-- MESSAGE -->
                 <div class="flex flex-col gap-1">
                 <label>Special Requests (Optional)</label>
 
-                <textarea class="p-5 rounded-lg" placeholder="Any special requests or preferences?"></textarea>
+                <textarea class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]" placeholder="Any special requests or preferences?"></textarea>
                 </div>
 
                 <!-- BUTTON -->
                 <div class="text-center">
-                    <button class="bg-[#e0b27a] px-16 py-2 rounded-lg text-black mb-4">
-                    Find a Table
+                    <button
+                    type="submit"
+                    class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-10 py-3 mb-4 rounded-md text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300 w-full md:w-auto"
+                    >
+
+                    <span class="relative z-10 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-utensils"></i>
+                        Find a Table
+                    </span>
+
+                    <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
                     </button>
                 
                     <p class="text-gray-300 text-sm">
@@ -217,7 +272,7 @@
     </section>
 
     <!-- PRIVATE DINING -->
-    <section class="max-w-7xl mx-auto grid grid-cols-3 gap-10 items-center mt-10 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+    <section class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-center mt-10 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
 
         <!-- IMAGE -->
         <div>
@@ -235,9 +290,18 @@
             Celebrate life’s special moments with us.
         </p>
 
-        <button class="px-6 py-2 bg-[#e0b27a] rounded-lg text-black shadow-2xl">
-            Inquire Now
-        </button>
+        <a
+            href="contact.html"
+            class="group inline-flex items-center gap-3 bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-8 py-3 rounded-xl text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300"
+            >
+
+            <i class="fa-solid fa-champagne-glasses"></i>
+
+            <span>Inquire Now</span>
+
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+
+        </a>
 
         </div>
 
@@ -269,7 +333,7 @@
     </section>
 
     <!-- RULES -->
-    <section class="max-w-7xl mx-auto mt-10 grid grid-cols-4 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+    <section class="max-w-7xl mx-auto mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
 
         <div class="flex gap-2 items-center">
 
@@ -318,17 +382,46 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-4 gap-10 border-b border-[#e0b27a]/20 p-6">
+    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
 
         <!-- BRAND -->
         <div class="space-y-4">
             <h3 class="text-3xl text-[#e0b27a]">Daferness</h3>
             <p class="text-gray-400 text-sm">Elevating dining to an art form.</p>
-            <div class="text-black flex gap-4 items-center">
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="flex gap-4 items-center">
+
+                <!-- TWITTER -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-x-twitter text-lg"></i>
+                </a>
+
+                <!-- FACEBOOK -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+
+                <!-- YOUTUBE -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-youtube text-lg"></i>
+                </a>
+
             </div>
         </div>
         <!-- LINKS -->
@@ -377,7 +470,7 @@
 
     </footer>
      <!-- COPYRIGHT -->
-    <div class="text-center text-sm py-3">
+    <div class="text-center text-sm py-3 border-t border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)]">
       <p>© 2025 Daferness. All rights reserved.</p>
     </div>
 </body>

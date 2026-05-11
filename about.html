@@ -24,7 +24,7 @@
             <h2 class="text-2xl text-[#e0b27a] font-semibold">Daferness</h2>
         </div>
 
-        <nav class="hidden md:flex gap-8 text-gray-300">
+        <nav class="hidden md:flex gap-6 text-gray-300">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a class="text-[#e0b27a] border-b border-[#e0b27a] pb-1">About Us</a>
@@ -32,7 +32,22 @@
             <a href="contact.html">Contact</a>
         </nav>
 
-        <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-5 py-2 rounded-lg text-black font-medium">Reserve a Table</button>
+        <a href="reservation.html">
+
+            <button
+            class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-xl text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300"
+            >
+
+            <span class="relative z-10 flex items-center gap-2">
+            <i class="fa-solid fa-calendar-check"></i>
+            Reserve a Table
+            </span>
+
+            <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
+            </button>
+
+        </a>
     </header>
 
     <!-- HERO -->
@@ -48,8 +63,22 @@
             Since our inception, we've been dedicated to bringing people together
             through exquisite cuisine, elegant ambiance, and impeccable service.
             </p>
+            <a href="reservation.html">
 
-            <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black font-medium">Reserve Your Table</button>
+                <button
+                class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] via-[#f0c48a] to-[#c8965a] px-10 py-4 rounded-2xl text-black font-bold tracking-wide shadow-2xl hover:scale-105 hover:shadow-[#e0b27a]/50 transition-all duration-300"
+                >
+
+                <span class="relative z-10 flex items-center gap-3">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                Reserve Your Table
+                </span>
+
+                <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
+                </button>
+
+            </a>
         </div>
 
         <div>
@@ -110,7 +139,7 @@
     <!-- TEAM -->
     <section class="max-w-7xl mx-auto px-6 py-10">
         <h2 class="text-center text-3xl text-[#e0b27a] mb-10">Meet Our Culinary Team</h2>
-        <div class="grid grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 gap-6">
             <div class="border border-gray-800 rounded-xl p-6 text-center">
             <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-28 h-28 mx-auto rounded-full mb-4">
             <h3 class="text-xl text-[#e0b27a]">Chef Daniel Roberts</h3>
@@ -137,7 +166,7 @@
     <!-- VALUES -->
     <section class="max-w-7xl mx-auto px-6 py-10 text-center">
         <h2 class="text-3xl text-[#e0b27a] mb-10">Our Values</h2>
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div>
             <h3>Integrity</h3>
             <p class="text-gray-400 text-sm">We believe in honesty and transparency.</p>
@@ -167,23 +196,67 @@
                 <h2 class="text-xl">Be Our Guest</h2>
                 <p class="text-gray-400 text-sm">We invite you to experience the essence of Daferness.</p>
             </div>
-            <button class="bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-6 py-3 rounded-lg text-black mt-4 md:mt-0">Reserve Your Table</button>
+            <a href="reservation.html">
+
+                <button
+                class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] via-[#f0c48a] to-[#c8965a] px-10 py-4 rounded-2xl text-black font-bold tracking-wide shadow-2xl hover:scale-105 hover:shadow-[#e0b27a]/50 transition-all duration-300"
+                >
+
+                <span class="relative z-10 flex items-center gap-3">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                Reserve Your Table
+                </span>
+
+                <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+
+                </button>
+
+            </a>
             <p>+1 (123) 456-7890</p>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-4 gap-10 border-b border-[#e0b27a]/20">
+    <footer class="max-w-7xl mx-auto py-10 px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
 
         <!-- BRAND -->
         <div class="space-y-4">
             <h3 class="text-3xl text-[#e0b27a]">Daferness</h3>
             <p class="text-gray-400 text-sm">Elevating dining to an art form.</p>
-            <div class="text-black flex gap-4 items-center">
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="bg-white rounded-full px-2 py-1 text-sm hover:scale-125 transition" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="flex gap-4 items-center">
+
+                <!-- TWITTER -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-x-twitter text-lg"></i>
+                </a>
+
+                <!-- FACEBOOK -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+
+                <!-- YOUTUBE -->
+                <a
+                    href="#"
+                    class="group w-11 h-11 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-lg text-[#e0b27a] hover:bg-[#e0b27a] hover:text-black hover:scale-110 hover:shadow-[0_0_20px_rgba(224,178,122,0.5)] transition-all duration-300"
+                >
+                    <i class="fab fa-youtube text-lg"></i>
+                </a>
+
             </div>
         </div>
         <!-- LINKS -->
@@ -232,7 +305,7 @@
 
     </footer>
      <!-- COPYRIGHT -->
-    <div class="text-center text-sm py-3">
+    <div class="text-center text-sm py-3 border-t border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)]">
       <p>© 2025 Daferness. All rights reserved.</p>
     </div>
 </body>
