@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,14 +99,24 @@
     </section>
 
     <!-- RESERVATION FORM SECTION -->
-    <section class="max-w-7xl mx-auto grid grid-cols-2 gap-10 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
+    <section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 border border-[#e0b27a]/20 shadow-[0_0_30px_rgba(224,178,122,0.05)] rounded-xl p-6">
 
         <!-- LEFT FORM -->
         <div>
             <h2 class="text-4xl text-[#e0b27a] mb-10 text-center">
                 Make a Reservation
             </h2>
-            <form class="space-y-6">
+            <form class="space-y-6" action="https://formspree.io/f/mojryedw" method="post">
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Reservation Request"
+                >
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="thankyou.html"
+                >
                 <!-- TOP ROW -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
@@ -139,7 +149,11 @@
                 <div class="grid grid-cols-2 gap-5">
                     <div class="flex flex-col gap-1">
                         <label>Your Name</label>
-                        <input class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]" type="text" placeholder="Enter your name">
+                        <input class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]" 
+                            type="text"
+                            name="customer_name"
+                            placeholder="Enter your name"
+                        >
                     </div>
 
                     <div class="flex flex-col gap-1">
@@ -180,7 +194,9 @@
                 <div class="flex flex-col gap-1">
                 <label>Special Requests (Optional)</label>
 
-                <textarea class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]" placeholder="Any special requests or preferences?"></textarea>
+                <textarea class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-md px-4 py-2 outline-none focus:border-[#e0b27a]" 
+                    placeholder="Any special requests or preferences?" name="special_requests">
+                </textarea>
                 </div>
 
                 <!-- BUTTON -->

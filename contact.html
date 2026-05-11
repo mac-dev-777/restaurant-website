@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
     </header>
 
     <!-- HERO -->
-    <section class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 gap-10 items-center">
+    <section class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
         <!-- LEFT -->
         <div>
             <p class="text-[#e0b27a]">
@@ -82,126 +82,131 @@
             <h2 class="text-4xl text-[#e0b27a] text-center mb-4">
             Send Us a Message
             </h2>
-            <form class="space-y-6">
+            <form class="space-y-6" action="https://formspree.io/f/mojryedw" method="post">
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Contact Message"
+                    >
 
-  <!-- TOP ROW -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- TOP ROW -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-    <!-- NAME -->
-    <div class="flex flex-col gap-2">
-      <label>Your Name</label>
+                    <!-- NAME -->
+                    <div class="flex flex-col gap-2">
+                    <label>Your Name</label>
 
-      <input
-        type="text"
-        name="name"
-        required
-        placeholder="Enter your full name"
-        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full transition"
-      >
-    </div>
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Enter your full name"
+                        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full transition"
+                    >
+                    </div>
 
-    <!-- EMAIL -->
-    <div class="flex flex-col gap-2">
-      <label>Email Address</label>
+                    <!-- EMAIL -->
+                    <div class="flex flex-col gap-2">
+                    <label>Email Address</label>
 
-      <input
-        type="email"
-        name="email"
-        required
-        autocomplete="email"
-        spellcheck="false"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        title="Enter a valid email address"
-        oninput="this.value=this.value.toLowerCase().replace(/\s/g,'')"
-        placeholder="Enter your email"
-        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full transition"
-      >
-    </div>
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        spellcheck="false"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Enter a valid email address"
+                        oninput="this.value=this.value.toLowerCase().replace(/\s/g,'')"
+                        placeholder="Enter your email"
+                        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full transition"
+                    >
+                    </div>
 
-  </div>
+                </div>
 
-  <!-- SECOND ROW -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- SECOND ROW -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-    <!-- PHONE -->
-    <div class="flex flex-col gap-2">
-      <label>Phone Number</label>
+                    <!-- PHONE -->
+                    <div class="flex flex-col gap-2">
+                    <label>Phone Number</label>
 
-      <input
-        type="tel"
-        name="phone"
-        required
-        maxlength="10"
-        pattern="[0-9]{10}"
-        inputmode="numeric"
-        oninput="this.value=this.value.replace(/[^0-9]/g,'')"
-        title="Please enter a valid 10-digit phone number"
-        placeholder="Enter your phone number"
-        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full transition"
-      >
-    </div>
+                    <input
+                        type="tel"
+                        name="phone"
+                        required
+                        maxlength="10"
+                        pattern="[0-9]{10}"
+                        inputmode="numeric"
+                        oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+                        title="Please enter a valid 10-digit phone number"
+                        placeholder="Enter your phone number"
+                        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full transition"
+                    >
+                    </div>
 
-    <!-- SUBJECT -->
-    <div class="flex flex-col gap-2">
-      <label>Subject</label>
+                    <!-- SUBJECT -->
+                    <div class="flex flex-col gap-2">
+                    <label>Subject</label>
 
-      <select
-        name="subject"
-        required
-        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full"
-      >
+                    <select
+                        name="subject"
+                        required
+                        class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full"
+                    >
 
-        <option value="">Select Subject</option>
-        <option>Table Reservation</option>
-        <option>Private Dining</option>
-        <option>Event Inquiry</option>
-        <option>Feedback</option>
-        <option>Partnership</option>
+                        <option value="">Select Subject</option>
+                        <option>Table Reservation</option>
+                        <option>Private Dining</option>
+                        <option>Event Inquiry</option>
+                        <option>Feedback</option>
+                        <option>Partnership</option>
 
-      </select>
-    </div>
+                    </select>
+                    </div>
 
-  </div>
+                </div>
 
-  <!-- MESSAGE -->
-  <div class="flex flex-col gap-2">
+                <!-- MESSAGE -->
+                <div class="flex flex-col gap-2">
 
-    <label>Your Message</label>
+                    <label>Your Message</label>
 
-    <textarea
-      name="message"
-      rows="5"
-      required
-      placeholder="Write your message here..."
-      class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full resize-none transition"
-    ></textarea>
+                    <textarea
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Write your message here..."
+                    class="bg-[#111] border border-gray-700 text-[#e0b27a] rounded-lg px-4 py-3 outline-none focus:border-[#e0b27a] w-full resize-none transition"
+                    ></textarea>
 
-  </div>
+                </div>
 
-  <!-- BUTTON -->
-  <div class="text-center">
+                <!-- BUTTON -->
+                <div class="text-center">
 
-    <button
-      type="submit"
-      class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-10 py-3 rounded-xl text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300 w-full md:w-auto"
-    >
+                    <button
+                    type="submit"
+                    class="group relative overflow-hidden bg-gradient-to-r from-[#e0b27a] to-[#c8965a] px-10 py-3 rounded-xl text-black font-semibold tracking-wide shadow-lg hover:shadow-[#e0b27a]/40 hover:scale-105 transition-all duration-300 w-full md:w-auto"
+                    >
 
-      <span class="relative z-10 flex items-center justify-center gap-2">
-        <i class="fa-solid fa-paper-plane"></i>
-        Send Message
-      </span>
+                    <span class="relative z-10 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message
+                    </span>
 
-      <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+                    <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
 
-    </button>
+                    </button>
 
-    <p class="text-gray-400 text-sm mt-4">
-      We respect your privacy. Your information will never be shared.
-    </p>
+                    <p class="text-gray-400 text-sm mt-4">
+                    We respect your privacy. Your information will never be shared.
+                    </p>
 
-  </div>
+                </div>
 
-</form>
+            </form>
         </div>
         <!-- RIGHT -->
         <div class="space-y-4">
